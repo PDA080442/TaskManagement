@@ -14,3 +14,8 @@ export interface AuthTokens {
   access: string,
   refresh: string
 }
+
+export interface Forget {
+  email: string
+}
+
