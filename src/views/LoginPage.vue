@@ -1,9 +1,17 @@
 <template>
-  <div class="col"></div>
-  <v-card></v-card>
-  <v-text-field></v-text-field>
-</template>
+  <v-main class="fill-height d-flex align-center justify-center">
+      <LoginForm />
+    </v-main>
+  </template>
 
-<script setup lang="ts">
+  <script lang="ts">
+  import { defineComponent } from 'vue'
+  import LoginForm from '@/components/LoginForm.vue';
 
-</script>
+  export default defineComponent({
+    name: 'LoginPage',
+    components: { LoginForm }
+  })
+  </script>
+
+  <style scoped></style>
