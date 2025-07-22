@@ -4,3 +4,13 @@ export interface RegData {
   email: string,
   password: string
 }
+
+export interface LogData {
+  email: string,
+  password: string
+}
+
+export interface AuthTokens {
+  access: string,
+  refresh: string
+}
