@@ -111,7 +111,7 @@
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { isEmail, isAlpha } from 'validator'
-import illustration from '@/assets/SignUp/Illustration.png'
+import illustration from '@/assets/SignIn/Illustration.png'
 import Logo from '@/assets/SignUp/Logo.png'
 import { regdata } from '@/composables/auth.request'
 import type { RegData } from '@/types/auth.type'

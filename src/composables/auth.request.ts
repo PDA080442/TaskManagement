@@ -4,5 +4,5 @@ import { useApi } from "./useApi";
 const { call } = useApi('/profile')
 
 export async function regdata(formdata: RegData): Promise<void> {
-  await call('/signin/', formdata, 'POST')
+  await call('/signup/', formdata, 'POST')
 }
