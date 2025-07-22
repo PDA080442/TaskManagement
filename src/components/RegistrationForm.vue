@@ -4,25 +4,10 @@
     <v-row gutter="0" class="ma-0 pa-0">
       <v-col cols="12" md="5" class="d-flex align-center justify-start pa-0">
         <v-card elevation="1" class="pa-16" max-width="450" width="450px" rounded="lg">
-          <v-img :src="Logo" max-width="60" class="mx-auto mb-4" />
+          <v-img :src="Logo" max-width="60" class="mx-auto mb-4 mt-2" />
           <div class="text-h5 font-weight-medium text-center mb-6">
             Регистрация
           </div>
-
-          <v-row dense class="mb-6 pa-0">
-            <v-col cols="6" class="px-1">
-              <v-btn variant="outlined" block class="text-none">
-                <v-icon left size="18">mdi-google</v-icon>
-                Google
-              </v-btn>
-            </v-col>
-            <v-col cols="6" class="px-1">
-              <v-btn variant="outlined" block class="text-none">
-                <v-icon left size="18">mdi-facebook</v-icon>
-                Facebook
-              </v-btn>
-            </v-col>
-          </v-row>
 
           <v-form ref="formRef" v-model="valid" lazy-validation>
             <v-text-field
@@ -155,6 +140,7 @@ function goLogin() {
 <style scoped>
 .text-none {
   text-transform: none;
+  margin-bottom: 20px;
 }
 
 :deep(html),

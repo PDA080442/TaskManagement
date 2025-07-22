@@ -1,4 +1,4 @@
-import type { RegData, LogData, AuthTokens, Forget } from "@/types/auth.type";
+import type { RegData, LogData, AuthTokens, Forget, Confirm, ConfirmResponse } from "@/types/auth.type";
 import { useApi } from "./useApi";
 import axios from "axios";
 
@@ -20,4 +20,12 @@ export async function logdata(logindata: LogData): Promise<AuthTokens> {
 
 export async function forgetreq(emaildata: Forget): Promise<void> {
   await call('/password-reset/', emaildata, 'POST')
+}
+
+export async function confirmreq(confirmdata: Confirm): Promise<ConfirmResponse> {
+  return await call(
+    "/password-reset/confirm/",
+    confirmdata,
+    "POST"
+  ) as ConfirmResponse;
 }

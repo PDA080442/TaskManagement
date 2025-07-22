@@ -19,3 +19,12 @@ export interface Forget {
   email: string
 }
 
+export interface Confirm {
+  uid: string,
+  token: string,
+  new_password: string
+}
+
+export interface ConfirmResponse {
+  detail: string;
+}

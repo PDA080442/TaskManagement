@@ -42,6 +42,10 @@
             <v-btn type="button" block large variant="text" class="text-none" @click="goReg">
               Нет аккаунта? Зарегистрируйтесь
             </v-btn>
+
+            <v-btn type="button" block large variant="text" class="text-none" @click="reset_password">
+              Забыли пароль?
+            </v-btn>
           </v-form>
         </v-card>
       </v-col>
@@ -90,9 +94,15 @@ async function submit() {
   }
 }
 
-function goReg() {
+
+const goReg = () => {
   router.push('/register')
 }
+
+const reset_password = () => {
+  router.push('/reset-password')
+}
+
 </script>
 
 <style scoped>

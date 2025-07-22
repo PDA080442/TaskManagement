@@ -9,7 +9,7 @@
             Введите свою почту
           </div>
 
-          <v-form ref="formRef" v-model="valid" lazy-validation>
+          <v-form ref="formRef" v-model="valid" lazy-zvalidation>
             <v-text-field v-model="forgetdata.email" label="Ваш Email" type="email" dense class="mb-4"
               :rules="[rules.require, rules.email]" required full-width prepend-inner-icon="mdi-email-outline" />
 
@@ -74,7 +74,7 @@ function goLog() {
 
 <style scoped>
 .card_login {
-  padding-top: 125px;
+  padding-top: 200px;
 }
 
 .text-none {
