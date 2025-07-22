@@ -7,4 +7,14 @@ export default createVuetify({
   components: {
     VDateInput,
   },
+  theme: {
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        colors: {
+          primary: '#605BFF',
+        },
+      },
+    },
+  },
 })
