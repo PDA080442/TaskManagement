@@ -28,8 +28,11 @@ const router = createRouter({
       name: 'reset-password-confirm',
       component: () => import('../views/ForgetPageConfirm.vue'),
     },
-
-
+    {
+      path: '/settings',
+      name: 'profile-settings',
+      component: () => import('../views/ProfilePage.vue'),
+    },
   ],
 })
 
