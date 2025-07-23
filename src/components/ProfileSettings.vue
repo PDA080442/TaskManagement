@@ -9,30 +9,46 @@
         </v-avatar>
         <h2 class="profile-title">Настройки профиля</h2>
       </div>
+      <div class="actions">
+        <v-btn text rounded="lg" elevation="0" border @click="onCancel">Cancel</v-btn>
+        <v-btn
+          class="ml-4"
+          style="background-color: #5051f9; color: white"
+          rounded="lg"
+          elevation="0"
+          @click="onSave"
+          >Save</v-btn
+        >
+      </div>
     </div>
 
-    <!-- Белая карточка с формой -->
-    <v-card class="settings-card mx-auto">
+    <v-card class="settings-card" color="#f5f7fa">
       <v-form ref="settingsForm" lazy-validation>
         <v-row dense>
           <v-col cols="12" sm="6">
-            <v-text-field v-model="form.first_name" label="First name" outlined dense />
-          </v-col>
-          <v-col cols="12" sm="6">
-            <v-text-field v-model="form.last_name" label="Last name" outlined dense />
-          </v-col>
-
-          <v-col cols="12" sm="6">
             <v-text-field
-              v-model="form.email"
-              label="Email"
-              prepend-inner-icon="mdi-email"
-              outlined
+              v-model="form.first_name"
+              label="First name"
+              variant="solo"
+              rounded="lg"
               dense
             />
           </v-col>
           <v-col cols="12" sm="6">
-            <v-text-field v-model="form.role" label="Role" outlined dense />
+            <v-text-field
+              v-model="form.last_name"
+              label="Last name"
+              variant="solo"
+              rounded="lg"
+              dense
+            />
+          </v-col>
+
+          <v-col cols="12" sm="6">
+            <v-text-field v-model="form.email" label="Email" variant="solo" rounded="lg" dense />
+          </v-col>
+          <v-col cols="12" sm="6">
+            <v-text-field v-model="form.role" label="Role" variant="solo" rounded="lg" dense />
           </v-col>
 
           <v-col cols="12" sm="6">
@@ -40,7 +56,8 @@
               v-model="form.old_password"
               label="Старый пароль"
               type="password"
-              outlined
+              variant="solo"
+              rounded="lg"
               dense
             />
           </v-col>
@@ -49,17 +66,13 @@
               v-model="form.new_password"
               label="Новый пароль"
               type="password"
-              outlined
+              variant="solo"
+              rounded="lg"
               dense
             />
           </v-col>
         </v-row>
       </v-form>
-
-      <div class="actions">
-        <v-btn text @click="onCancel">Cancel</v-btn>
-        <v-btn class="ml-4" color="primary" @click="onSave">Save</v-btn>
-      </div>
     </v-card>
   </v-container>
 </template>
@@ -82,6 +95,10 @@ function onSave() {
 </script>
 
 <style scoped>
+* {
+  color: #232360;
+}
+
 .profile-page {
   background: #f5f7fa;
 }
@@ -100,8 +117,8 @@ function onSave() {
 }
 .banner-overlay {
   position: absolute;
-  bottom: -50px; /* половина размера аватара */
-  right: 40px;
+  bottom: -10px;
+  left: 80px;
   display: flex;
   align-items: center;
 }
@@ -110,18 +127,22 @@ function onSave() {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .profile-title {
+  margin-top: 30px;
   margin-left: 16px;
   font-size: 24px;
   font-weight: 600;
 }
 
-/* Карточка с формой */
 .settings-card {
-  margin-top: 80px; /* пространство под аватаром */
+  margin-left: 90px;
+  margin-top: 20px;
   padding: 32px;
-  max-width: 900px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  box-shadow: none;
+}
+
+.v-text-field {
+  margin-right: 20px;
 }
 
 /* Кнопки */
