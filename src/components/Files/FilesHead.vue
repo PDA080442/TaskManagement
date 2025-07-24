@@ -28,12 +28,9 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.files-head {
-  background-color: #f7f7f9;
-}
 
 .btn-create {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
 }
 
