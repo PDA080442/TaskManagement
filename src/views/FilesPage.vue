@@ -21,4 +21,8 @@ export default defineComponent({
   padding: 0;
   background-color: #f7f7f9;
 }
+
+.first_row {
+  display: flex;
+}
 </style>

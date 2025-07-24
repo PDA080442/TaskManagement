@@ -44,7 +44,7 @@ const folders: FileFolderType[] = fileFolders
 <style scoped>
 .files-grid {
   border-radius: 10px;
-  max-width: 900px;
+  max-width: 1300px;
   padding: 30px;
   margin: 0 30px 30px 30px;
   background: #fff;
@@ -86,7 +86,7 @@ const folders: FileFolderType[] = fileFolders
 }
 
 .folder-card {
-  max-width: 271px;
+  max-width: 400px;
   border-radius: 12px;
   transition: transform 0.2s;
   padding: 16px;
