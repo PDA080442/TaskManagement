@@ -24,7 +24,4 @@ export default defineComponent({
   background-color: #f7f7f9;
 }
 
-.first_row {
-  display: flex;
-}
 </style>

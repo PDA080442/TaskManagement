@@ -38,6 +38,11 @@ const router = createRouter({
       name: 'files',
       component: () => import('../views/FilesPage.vue'),
     },
+    {
+      path: '/tasks',
+      name: 'tasks',
+      component: () => import('../views/TasksPage.vue'),
+    },
   ],
 })
 
