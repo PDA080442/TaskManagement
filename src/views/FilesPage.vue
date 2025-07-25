@@ -2,6 +2,7 @@
   <v-main class="fill-height align-center justify-center">
     <FilesHead />
     <FilesFolder />
+    <FilesItem />
   </v-main>
 </template>
 
@@ -9,10 +10,11 @@
 import { defineComponent } from 'vue'
 import FilesHead from '@/components/Files/FilesHead.vue'
 import FilesFolder from '@/components/Files/FilesFolder.vue'
+import FilesItem from '@/components/Files/FilesItem.vue'
 
 export default defineComponent({
   name: 'FilesPage',
-  components: { FilesHead, FilesFolder },
+  components: { FilesHead, FilesFolder, FilesItem },
 })
 </script>
 

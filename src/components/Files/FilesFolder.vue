@@ -1,4 +1,3 @@
-<!-- src/components/FilesGrid.vue -->
 <template>
   <v-container class="files-grid" fluid>
     <!-- Header -->
@@ -69,7 +68,6 @@ const folders: FileFolderType[] = fileFolders
   color: #2c2e3e;
 }
 
-/* Flex‑сетка: 3 колонки, 2 ряда */
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +78,6 @@ const folders: FileFolderType[] = fileFolders
   margin-right: 16px;
 }
 
-/* Три колонки по ширине контейнера с учётом gap */
 .card-wrapper {
   flex: 0 0 calc((100% - 2 * 20px) / 3);
 }

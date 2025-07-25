@@ -14,4 +14,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-main {
+  padding: 0;
+}
+</style>

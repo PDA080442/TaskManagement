@@ -46,7 +46,7 @@ import msgIcon from '@/assets/sidebar/message.svg?url'
 import logoIcon from '@/assets/sidebar/logo.svg?url'
 
 const items = [
-  { title: 'Dashboard', route: '/dashboard', icon: dashboardIcon },
+  { title: 'Главная', route: '/', icon: dashboardIcon },
   { title: 'Timeline', route: '/timeline', icon: timelineIcon },
   { title: 'Tasks', route: '/tasks', icon: taskIcon },
   { title: 'Files', route: '/files', icon: filesIcon },

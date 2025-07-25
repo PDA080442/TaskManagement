@@ -5,3 +5,12 @@ export interface FileFolderType {
   color: string;
   icon: string;
 }
+
+export interface FileItemType {
+  id: number;
+  name: string;
+  size: string;
+  createdAt: string;
+  icon: string;
+  iconColor?: string;
+}

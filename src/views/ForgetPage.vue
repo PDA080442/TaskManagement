@@ -6,12 +6,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import ForgetPassword from '@/components/ForgetPassword.vue';
+import ForgetPassword from '@/components/ForgetPassword.vue'
 
 export default defineComponent({
   name: 'ForgetPage',
-  components: { ForgetPassword }
+  components: { ForgetPassword },
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-main {
+  padding: 0;
+}
+</style>
